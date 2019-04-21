@@ -1,2 +1,15 @@
-server:
-  port: 7001
+spring:
+  profiles: 
+    active:
+    - dev
+---
+spring:
+  profiles: dev
+  application:
+    name: microconfig-test-devv
+---
+spring:
+  profiles: default
+  application:
+    name: microconfig-test-default
+  
